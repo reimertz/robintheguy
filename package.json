@@ -1,10 +1,11 @@
 {
-  "name": "flamecause.com",
+  "name": "robintheguy",
   "description": "",
   "version": "0.0.1",
   "author": "Pierre Reimertz",
   "scripts": {
-    "start": "NODE_ENV=development; node server.js",
+    "start": "node server.js",
+    "debug": "node --debug server.js",
     "postinstall": "grunt -env heroku"
   },
   "engines": {
@@ -12,19 +13,20 @@
     "npm": "1.2.x"
   },
   "dependencies": {
+    "consolidate": "*",
+    "express": "*",
     "deferred": "~0.6.8",
-    "request": "~2.33.0",
-    "consolidate": "~0.10.0",
-    "express": "~3.4.8",
-    "swig": "~1.3.2",
-    "grunt": "~0.4.2",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-replace": "~0.6.2",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-concat-in-order": "~0.1.6",
-    "grunt-contrib-uglify": "~0.3.3",
-    "grunt-contrib-less": "~0.9.0",
-    "underscore": "~1.6.0",
-    "grunt-contrib-watch": "~0.5.3"
+    "swig": "*",
+    "underscore": "*",
+    "grunt-cli": "*",
+    "grunt": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-concat-in-order": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-replace": "*",
+    "grunt-contrib-copy": "*",
+    "request": "~2.33.0"
   }
 }
