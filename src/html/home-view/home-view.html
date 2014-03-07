@@ -1,0 +1,37 @@
+{% extends '/base.html' %}
+
+{% block css_head_theme %}
+<link rel="stylesheet" href="/css/desktop/home-view.css">
+{% endblock %}
+
+{% block js_head_theme %}
+<script src="/js/home-view/home.js"></script>
+{% endblock %}
+
+{% block body %}
+<div id="fb-root"></div>
+
+<i class="fa fa-heart"></i>
+
+<div class="image-container-top"></div>
+
+<div class="love-container">
+  <audio src="http://202.143.156.114/chok/old%20english%20songs/E-Musics/I%20Will%20Always%20Love%20You.mp3" loop></audio>
+  <h2>Robin is The Guy!</h2>
+  <h2>Login to see all the love you shared!</h2>
+  <h3>Happy Bday! :D</h3>
+
+  <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-scope="user_photo_video_tags, friends_photo_video_tags" data-show-faces="true" data-auto-logout-link="true"></div>
+</div>     
+
+<div class="image-container-bottom"></div>
+
+</div>
+
+
+
+{% endblock %}
+
+{% block js_body_page %}
+
+{% endblock %}

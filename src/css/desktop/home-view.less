@@ -1,0 +1,126 @@
+@import '/lib/variables';
+@import '/third-party/font-awesome/font-awesome';
+
+
+.fa-heart{
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    -webkit-animation: heartpulse ease-in-out 3s infinite;
+    -moz-animation: heartpulse ease-in-out 3s infinite;
+    -o-animation: heartpulse ease-in-out 3s infinite;
+    animation: heartpulse ease-in-out 3s infinite;
+}
+
+body.red {
+    -webkit-animation: pulse ease-in-out 10s infinite;
+    -moz-animation: pulse ease-in-out 10s infinite;
+    -o-animation: pulse ease-in-out 10s infinite;
+    animation: pulse ease-in-out 8s infinite;
+
+}
+
+img {
+  width: 720px;
+}
+
+.image-container-top {
+  display: inline;
+  white-space: nowrap;
+  width: 300000px;
+  position: absolute;
+  height: 500px;
+  margin-left: -150000px;
+  top: 0;
+  z-index: -2;
+}
+
+.image-container-top {
+  vertical-align: top;
+}
+
+.image-container-bottom {
+  display: inline;
+  white-space: nowrap;
+  width: 300000px;
+  position: absolute;
+  height: 500px;
+  margin-left: -150000px;
+  bottom: 0;
+  z-index: -2;
+}
+
+.top-image, .bottom-image {
+  position: relative;
+  width: 720px;
+  height: 480px;
+  background-size: cover;
+  display: inline-block;
+  background-position: center center;
+}
+
+.love-container {
+  background: rgba(0,0,0,0.5);
+  padding-top: 20px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.fb-login-button{
+  display: inline!important;
+  margin-left: 150px;
+}
+
+@-webkit-keyframes pulse {
+    0% { background-color: black; }
+    50% { background-color: red; }
+    100% { background-color: black; }
+}
+@-moz-keyframes pulse {
+    0% { background-color: black; }
+    50% { background-color: red; }
+    100% { background-color: black; }
+}
+@-ms-keyframes pulse {
+    0% { background-color: black; }
+    50% { background-color: red; }
+    100% { background-color: black; }
+}
+@-o-keyframes pulse {
+    0% { background-color: black; }
+    50% { background-color: red; }
+    100% { background-color: black; }
+}
+@keyframes pulse {
+    0% { background-color: black; }
+    50% { background-color: red; }
+    100% { background-color: black; }
+  }
+
+
+@-webkit-keyframes heartpulse {
+    0% { font-size: 150px; color:white;}
+    50% { font-size: 250px; color: red; }
+    100% { font-size: 150px; color: white}
+}
+@-moz-keyframes heartpulse {
+    0% { font-size: 150px; color:white;}
+    50% { font-size: 250px; color: red; }
+    100% { font-size: 150px; color: white}
+}
+@-ms-keyframes heartpulse {
+    0% {font-size: 150px; color:white;}
+    50% { font-size: 250px; color: red; }
+    100% { font-size: 150px; color: white}
+}
+@-o-keyframes heartpulse {
+    0% {font-size: 150px; color:white;}
+    50% { font-size: 250px; color: red; }
+    100% { font-size: 150px; color: white}
+}
+@keyframes heartpulse {
+    0% {font-size: 150px; color:white;}
+    50% { font-size: 250px; color: red; }
+    100% { font-size: 150px; color: white}
+  }
