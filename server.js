@@ -3,8 +3,6 @@
 var consolidate = require('consolidate'),
     express = require('express'),
     swig = require('swig'),
-    DB = require('./database/mongoose'),
-    Q = require("q"),  
     app = express(),
     port = process.env.PORT || 3000;
 
