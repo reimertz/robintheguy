@@ -14,18 +14,16 @@ function gotCommonImages(images){
   $('.image-container-bottom').append('<div class="bottom-image" style="background-image:url(' +  images[0].src_big + ');"></div>');  
   setInterval(function(){imageRotatorBottom(images);}, 3000);
   
-  console.log(images);
   $('body').addClass('red');
   $('audio')[0].play();
 }
 
 function imageRotatorBottom(images){
-  console.log(_.random(0, images.length));
   if($('.image-container-bottom div').length === 5){
     $('.image-container-bottom div:first').animate({
         marginLeft: '-=1440px'
         }, 500,'swing', function() {
-          console.log('remove');
+      
           $( this ).remove();
           $('.image-container-bottom div:first').css('margin-left','720px');
           $('.image-container-bottom').append('<div class="bottom-image" style="background-image:url(' +  images[_.random(0, images.length-1)].src_big + ');"></div>');
@@ -49,12 +47,11 @@ function getRobinImages(images){
 }
 
 function imageRotatorTop(images){
-  console.log(_.random(0, images.length));
   if($('.image-container-top div').length === 5){
     $('.image-container-top div:last').animate({
         marginRight: '-=1440px'
         }, 500,'swing', function() {
-          console.log('remove');
+      
           $( this ).remove();
           $('.image-container-top div:last').css('margin-right','720px');
           $('.image-container-top').prepend('<div class="top-image" style="background-image:url(' +  images[_.random(0, images.length-1)].src_big + ');"></div>');
