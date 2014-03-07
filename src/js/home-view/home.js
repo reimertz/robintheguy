@@ -13,9 +13,6 @@
 function gotCommonImages(images){
   $('.image-container-bottom').append('<div class="bottom-image" style="background-image:url(' +  images[0].src_big + ');"></div>');  
   setInterval(function(){imageRotatorBottom(images);}, 3000);
-  
-  $('body').addClass('red');
-  $('audio')[0].play();
 }
 
 function imageRotatorBottom(images){
@@ -70,8 +67,11 @@ function imageRotatorTop(images){
 }
 
 function handleFacebookThingy(response){
-    if (response.status === 'connected') {
-      //$('.love-container').slideUp();
+    if (response.status === 'connected') {  
+      
+      $('body').addClass('red');
+      $('audio')[0].play();
+
       FB.api({
           method: 'fql.query',
           query: 'SELECT pid, src_big FROM photo WHERE pid IN(SELECT pid FROM photo_tag WHERE subject=me()) AND pid IN(SELECT pid FROM photo_tag WHERE subject=737958530)'
